@@ -1,0 +1,250 @@
+Project Title:
+Password Based Door Locked System.
+
+
+
+
+Group Members:	
+1.	MehulPatil.(305).
+2.	NiranjanPatil.(307).
+
+Guide Name: Mayura Kulkarni. 
+Abstract:
+We all face problems due to a single key lock system where either there is a key to a lock which has to be shared by all the members of the house or either duplicates keys to carry with ourselves without forgetting. Traditional lock systems using mechanical lock and key mechanism are being replaced by new advanced techniques of locking system. These techniques are an integration of mechanical and electronic devices and highly intelligent. One of the prominent features of these innovative lock systems is their simplicity and high efficiency.
+Keywords: Motor, Microcontroller, LCD, keypad, buzzer, Door lock, Password
+Introduction:
+Motivation: 
+1. As the world is moving towards the digital systems, there is a revolution going on to convert manual systems into digital systems.
+2. The traditional locking system is not a full proof system and many times faces failures.
+Objectives:
+1.  To implement a digital door lock system by using password.
+2.  To enhance the security of the lock system.
+ 3.Elimination of traditional mechanical locks.
+4. Give the flexibility to the user to change or reset the password in case the user forgets that combination.
+
+Outcomes: 
+The main component in the circuit is 8051 controller. In this project 4x3 keypad is used to enter the password. The password which is entered is compared with the predefined password. 
+If the entered password is correct then the system opens the door by rotating door motor and displays the status of door on LCD. If the password is wrong then door is remain closed and display “pwd is wrong” on LCD
+ Literature Survey:
+[1]R.P.JAIN, Modern Digital Electronics.
+[2] http://www.firmcodes.com/microcontrollers/8051-3/password-based-door-locking-system-8051/
+ [3] http://www.circuitstoday.com/digital-door-lock-password-based-security-8051 
+[4] http://www.electronicshub.org/password-based-door-lock-system-using-8051-microcontroller/
+ [5] http://www.microcontroller-project.com/automatic-door-lock-with-8051.html 
+[6] https://exploreembedded.com/wiki/A1.8051_Interfacing:LCD_16x2 
+[7] https://exploreembedded.com/wiki/A1.8051_Interfacing:KEYPAD
+ [8] https://www.youtube.com/watch?v=grr2Ykc95ZA 
+            [9]https://www.youtube.com/watch?v=b-AO1Ra0DC4
+           [10] http://www.eeweb.com/project/sudheer_gupta/password-based-                          door-locking-system-using-8051
+
+ Hardware and Software Requirements:
+Hardware Requirements:
+•	At89c51 controller
+•	Programming cable
+•	DC battery or 12V,1A adaptor
+•	4×4 matrix keypad
+•	16×2 LCD
+•	5V motor driver
+•	DC motor
+•	10k resistor (1/4 watt)
+•	10µF,1µf electrolytic capacitor
+•	33pF capacitors – 2
+•	12MHz Crystal
+•	connecting wires
+
+Configuration:
+89C51 MICROCONTROLLER
+The AT89C51 is a low-power, high-performance CMOS 8-bit microcomputer with 4K Bytes of Flash programmable and erasable read only memory (PEROM). The device is manufactured using Atmel’s high-density nonvolatile memory technology and is Compatible with the industry-standard MCS-51 instruction set and pin out. The on-chip Flash allows the program memory to be reprogrammed in-system orby a conventional non-volatile memory programmer. By combining a versatile 8-bit CPU with Flash on a monolithic chip, the AtmelAT89C51 is a powerful microcomputer which provides a highly-flexible and cost-effective solution to many embedded control applications. 
+
+ 
+					
+
+FEATURES
+The AT89C51 provides the following standard features: 
+•	4K bytes of Flash, 128 bytes of RAM
+•	32 I/O lines
+•	Two 16-bit timer/counters
+•	 five vector two-level interrupt architecture
+•	a full duplex serial port
+•	achip oscillator and clock circuitry.
+•	In addition, the AT89C51 is designed with static logic for operation down to zero frequency and supports two software selectable power saving modes.
+•	 The Idle Mode stops the CPU while allowing the RAM, timer/counters, serial port and interrupt system to continue functioning.
+•	The Power-down Mode saves the RAM contents but freezes the oscillator disabling all other chip functions until the next hardware reset.
+•	The AT89C51 implements 256 bytes of on-chip RAM. The upper 128 bytes occupy a parallel address space to the Special Function Registers.
+•	That means the upper 128 bytes have the same addresses as the SFR space but are physically separate from SFR space.
+•	When an instruction accesses an internal location above address 7FH, the address mode used in the instruction specifies whether the CPU accesses the upper 128 bytes of RAM or the SFR space. Instructions that use direct addressing access SFR space. New features.
+•	In that case, the reset or inactive values of the new bits will always be 0.
+
+Resistor: 
+
+Resistor is a component that resists the flow of direct or alternating electric circuit. Resistors can limit or divide the current, reduce the voltage, protect an electric circuit, or provide large amounts of heat or light. An electric current is the movement of charged particles called electrons from one region to another. Resistors are usually placed in electric circuits. Physicists explain the flow of current through a material, such as a resistor, by comparing it to water flowing through a pipe. Resistors are designed to have a specific value of resistance. Resistors used in electric circuits are cylindrical. They are often colour coded by three or four colour bands that indicate the specific value of resistance. Resistors obey ohm‟s law, which states that the current density is directly proportional to the electric field when the temperature is constant. 
+
+
+Capacitor: 
+
+Capacitor or electric condenser is a device for storing an electric charge. The simplest form of capacitor consists of two metal plates separated by a non touching layer called the dielectric. When one plate is charged with electricity from a direct current or electrostatic source, the other plate have induced in it a charge of the opposite sign; that is, positive if the original charge is negative and negative if the original charge is positive. The electrical size of the capacitor is its capacitance. Capacitors are limited in the amount of electric charge they can absorb; they can conduct direct current for only instances but function well as conductors in alternating current circuits. Fixed capacity and variable capacity capacitors are used in conjunction with coils as resonant circuits in radios and other electronic equipment. Capacitors are produced in a wide variety of forms. Air, Mica, Ceramics, Paper, Oil, and Vacuums are used as dielectrics depending on the purpose for which the device is intended. 
+
+Transistor: 
+
+Transistor is a device which transforms current flow from low resistance path to high resistance path. It is capable of performing many functions of the vacuum tube in electronic circuits, the transistor is the solid state device consisting of a tiny piece of semi conducting material, usually germanium or silicon, to which three or more electrical connections are made. 
+N-type and P-type Transistor: 
+A germanium or silicon crystal, containing donor impurity atoms is called a negative or n-type semiconductor to indicate the presence of excess negatively charged electrons. The use of an acceptor impurity produces a positive, or p-type semiconductor so called because of the presence of positively charged holes. When an electrical voltage is applied, the n-p junction acts as a rectifier, permitting current to flow in only one direction. If the p-type region is connected to the positive terminal of the battery and the n-type to the negative terminal, a large current flows through the material across the junction. 
+
+
+Diode: 
+
+Diode is a electronic device that allows the passage of current in only one direction. The first such devices were vacuum-tube diodes, consisting of an evacuated glass or steel envelope containing two electrodes – a cathode and an anode. The diodes commonly used in electronic circuits are semiconductor diodes. There are different diodes used in electronic circuits such as Junction diode, Zener diode, Photo diodes, and tunnel diode. 
+Junction diodes consist of junction of two different kinds of semiconductor material. The Zener diode is a special junction type diode, using silicon, in which the voltage across the junction is independent of the current through the junction. 
+
+Relay Driver (BC548): 
+The BC547 transistor is an NPN Epitaxial Silicon Transistor. The BC547 transistor is a general-purpose transistor in small plastic packages. It is used in general-purpose switching and amplification BC847/BC547 series 45 V, 100 mA NPN general-purpose transistors. 
+The BC547 transistor is an NPN bipolar transistor, in which the letters "N" and "P" refer to the majority charge carriers inside the different regions of the transistor. Most bipolar transistors used today are NPN, because electron mobility is higher than whole mobility in semiconductors, allowing greater currents and faster operation. NPN transistors consist of a layer of P-doped semiconductor (the "base") between two N-doped layers. A small current entering the base in common-emitter mode is amplified in the collector output. In other terms, an NPN transistor is "on" when its base is pulled high relative to the emitter. The arrow in the NPN transistor symbol is on the emitter leg and points in the direction of the conventional current flow when the device is in forward active mode. One mnemonic device for identifying the symbol for the NPN transistor is "not pointing in." An NPN transistor can be considered as two diodes with a shared anode region. In typical operation, the emitter base junction is forward biased and the base collector junction is reverse biased. In an NPN transistor, for example, when a positive voltage is applied to the base emitter junction, the equilibrium between thermally generated carriers and the repelling electric field of the depletion region becomes unbalanced, allowing thermally excited electrons to inject into the base region. These electrons wander (or "diffuse") through the base from the region of high concentration near the emitter towards the region of low concentration near the collector. The electrons in the base are called minority carriers because the base is doped p-type which would make holes the majority carrier in the base.
+
+STEPPER MOTOR
+A stepper motor (or step motor) is a brushless, synchronous electric motor that can divide a full rotation into a large number of steps.  The motors position can be controlled precisely without any feedback mechanism(see Open-loop controller), as long as the motor is carefully sized to the application. Stepper motors are similar to switched reluctance motors (which are very large stepping motors with a reduced pole count, and generally are closed-loop commutated.) 
+Stepper Motor Driver IC ULN2003 
+
+CHARACTERISTICS OF STEPPER MOTOR
+•	Stepper motors are constant power devices.
+•	As motor speed increases, torque decreases.
+•	The torque curve may be extended by using current limiting drivers and increasing the driving voltage.
+•	Steppers exhibit more vibration than other motor types, as the discrete step tends to snap the rotor from one position to another.
+•	This vibration can become very bad at some speeds and can cause the motor to lose torque.
+•	The effect can be mitigated by accelerating quickly through the problem speeds range, physically damping the system, or using a micro-stepping driver.
+Motors with a greater number of phases also exhibit smoother operation than those with fewer phases.
+
+LCD
+The LM016L LCD is fully compatible with the AT89c51. It is a 16×2 LCD module i.e. it has 16columns and 2 rows for display. It can operate in either 8 bit mode or 4 bit mode. In 8 bit mode, 8 bit is data is sent to the LCD from the MCU whereas in 4 bit mode,4 bits of data are sufficient to operate it.
+
+Software Requirements:
+1. Proteus 8.0 version (For circuit and simulation).
+2. Keil µ Vision 5.
+
+1.	Proteus:
+ Proteus 8 professional is a product developed byLabcenter Electronics. Proteus combines ease-of- use with powerful features tohelp us design, test and layout professional PCBs. Main features: - 800microcontroller variants ready for simulation straight from the schematic.  TheAdvanced Simulation Features product adds graph based analyses to our Proteuscircuit simulation.
+2.	Keilµ vision 5 :  
+The µVision IDE combines project management, run-timeenvironment, build facilities, source code editing, and program debugging in asingle powerful environment. µVision is easy-to- use and accelerates yourembedded software development. µVision supports multiple screens and allowsyou to create individual window layouts anywhere on the visual surface.
+Block Diagram: 
+
+
+
+ Working of the project:
+DESIGN DETAILS
+ 
+Circuit Diagram
+
+
+Password Based Door Lock System Circuit Operation:
+Once the circuit is powered, microcontroller sends commands to the LCD such that it is ready to accept the data. This data is entered using the keypad. Once the data is entered, it is displayed on the LCD. This data denotes the password. 
+According to the program, the microcontroller again sends commands to clear the LCD and then sends the data to be displayed on the LCD. The password is entered using the keypad and it is checked with the set password. If the passwords 
+match, the microcontroller sends signals to the motor driver such that pin P2.3 is at high level and pin P2.4 is at low level (while the enable pin of L293D is at high level) and the motor rotates in forward direction. After a certain time delay, the enable pin is grounded by sending a low logic signal from the microcontroller and the motor stops. Again after some certain time delay, the microcontroller sends signals to the motor driver such that P2.3 is at logic low level, P2.4 is at logic 
+high level and the enable pin is at logic high level. The motor now rotates in backward direction. Now if the passwords do not match, the microcontroller sends a logic low signal to the enable pin of the microcontroller, thus disabling the motor driver and the motor does not runs at all.
+
+ALGORTIHM:
+1. START 
+2. initialiselcd , keypad 
+3. clearlcd
+4. print “Set Password” on lcd
+5. get 4 char long password using matrix key pad 
+6. if input is correct then
+6.1 print “Confirm Password” 
+6.2 get Inputt char password using matrix key pad 
+6.3 if  set password=confirm password then 
+6.4 no error
+6.5 else
+6.6 print “ wrong password ” on lcd
+6.7 go to step 4
+7. accept input using matrix key pad 
+7.1 if input = set password then motor start 
+7.2 else
+7.3 decrement retry count 
+7.4 print “ wrong password ” on lcd
+7.5 if retry count = 0 then sound alarm on 
+7.6 go to step 6.2 
+8. STOP
+
+
+			 					                                       flowchart
+ 
+Working on the simulation:
+Execution Process:
+FOR PROTEUS:
+1. Download the setup from any open source platform (proteus is not open source) .
+2. Install the setup with a key which is provided in the setup.
+3. After installation, double click on the proteus icon to start the software.
+4. Click on file, new project to start new project. 
+5. Select from board or project and the name of the project as shown in the figure.
+
+
+ 
+
+6. Select next then Select a schematic template out of many Templates available as shown in figure 4.
+7. Now Select design template/layout as shown in figure 5.
+8. Now select family, controller for your project.
+9. Now assemble all the hardware. 
+ 
+Figure 3
+
+
+
+ 
+Figure 4
+
+
+
+
+
+
+ 
+Figure 5
+
+FOR KEIL
+1. Download the setup from any open source site.
+2. You have to fill a form even though keil is a open src software.
+3. Install keil.
+4. Start the software and select on new.
+5. Select microcontroller you are going to use as shown in figure 7.
+
+ 
+
+                                                               Figure 7
+6. Add appropriate files to it and create a hex file.
+Conclusion:
+This project is meant for security systems whose access is only for respected authorities. Using a microcontroller the password entered is checked with the stored password and then does the corresponding operations. Here we use a 4 digit password for better secrecy.
+Advantages:
+1. This project provides security
+2. Power consumption is less
+3. Used commonly available components
+4. Project is simple and easy
+Limitations: 
+1. It is a low range circuit, i.e. it is not possible to operate the circuit remotely.
+2. If you forget the password it is not possible to open the door.
+Applications:
+1. This simple circuit can be used at residential places to ensure better safety.
+2. It can be used at organizations to ensure authorized access to highly secured places.
+3. With a slight modification this Project can be used to control the switching of loads through password.
+References:
+[1]R.P.JAIN, Modern Digital Electronics.
+[2] http://www.firmcodes.com/microcontrollers/8051-3/password-based-door-locking-system-8051/
+ [3] http://www.circuitstoday.com/digital-door-lock-password-based-security-8051 
+[4] http://www.electronicshub.org/password-based-door-lock-system-using-8051-microcontroller/
+ [5] http://www.microcontroller-project.com/automatic-door-lock-with-8051.html 
+[6] https://exploreembedded.com/wiki/A1.8051_Interfacing:LCD_16x2 
+[7] https://exploreembedded.com/wiki/A1.8051_Interfacing:KEYPAD
+ [8] https://www.youtube.com/watch?v=grr2Ykc95ZA 
+[9]https://www.youtube.com/watch?v=b-AO1Ra0DC4
+[10] http://www.rigelcorp.com/8051/P%26ICH1.pdf
+[11] https://www.ikalogic.com/part-2-c-programming-for-8051-using-keil-ide/
+[12] https://electrosome.com/interfacing-lcd-with-8051-using-keil-c-at89c51/
+[13] https://electrosome.com/interfacing-dc-motor-8051-keil-c-at89c51/
+[14] http://www.eeweb.com/project/sudheer_gupta/password-based-door-locking-system-using-8051
+
+
+	
+
+
+
+
+
+
+
